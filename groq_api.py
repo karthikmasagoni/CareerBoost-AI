@@ -27,7 +27,7 @@ def get_ai_feedback(
     """
 
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[
             {
                 "role": "user",
@@ -50,7 +50,7 @@ def generate_interview_questions(
     """
 
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[
             {
                 "role": "user",
@@ -73,7 +73,7 @@ def evaluate_answer(question,answer):
     4.Better Answer """
 
     response=client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[
             {
                 "role":"user",
